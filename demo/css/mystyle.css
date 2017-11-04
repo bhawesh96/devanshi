@@ -126,3 +126,17 @@ button.close {
     background: #181922;
     padding: 20px;
 }
+
+button.cv {
+   background-color: #E4E4E4;
+   padding: 10px 20px 10px 20px;
+   color: #181922;
+   font-weight: 600;
+}
+button.cv:focus,
+button.cv:active,
+button.cv:hover {
+   background-color: #cecec5;
+   color: #181922;
+   font-weight: 600;
+}
