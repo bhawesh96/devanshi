@@ -119,7 +119,10 @@ button.close {
     color: black;
 }
 
-object {
-    width: 100%;
-    
+.skills {
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    text-align: center;
+    color: #fff;
+    background: #181922;
+    padding: 20px;
 }

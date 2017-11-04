@@ -6,9 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Devanshi</title>
-	<meta name="description" content="An interactive journey where a Canvas map path is animated according to the content that is scrolled on the page. By Lucas Bebber." />
-	<meta name="keywords" content="svg map, animated, path, journey, story, article, canvas, images, plane, web design" />
-	<meta name="author" content="Lucas Bebber for Codrops" />
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -17,17 +16,126 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<div class="partials" w3-include-html="partials/competitionModals.html"></div>
+<style type="text/css">
+	
+/*--progress-bars--*/
+.bar_group {
+    position: relative;
+	z-index: 0;
+	left: 18%;
+}
+.bar_group__bar.thin::before{
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 30px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #E4E4E4;
+}
+.bar_group__bar.thin {
+	width: 0%;
+	height: 30px;
+	padding-left: 100px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #cecec5;
+	margin-bottom: 10px;
+	-webkit-transition: width 1s;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	margin-bottom: 2em !important;
+}
+.bar_label_max {
+	position: absolute;
+	right: 0;
+	font-size: .8em;
+	margin-top: 1em;
+	color: #bdbdbd;
+	display: none;
+}
+.bar_label_min {
+    position: absolute;
+    left: 0;
+    font-size: .8em;
+    margin-top: 1em;
+	color: #bdbdbd;
+	display: none;
+}
+.b_tooltip {
+	-webkit-transition: all 2s;
+	transition: all 2s;
+	-moz-transition: all 2s;
+	position: relative;
+	float: left;
+	left: 100%;
+	padding: 4px 10px 7px 10px;
+	background-color: #000;
+	-webkit-transform: translateX(-50%) translateY(-30px);
+	-ms-transform: translateX(-50%) translateY(-30px);
+	transform: translateX(-50%) translateY(-30px);
+	-moz-transform: translateX(-50%) translateY(-30px);
+	-o-transform: translateX(-50%) translateY(-30px);
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	line-height: 11px;
+}
+.b_tooltip span {
+  color: #fff;
+  font-size: 0.8em;
+}
+.b_tooltip--tri {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+}
+.b_label {
+	font-weight: 600;
+    margin-bottom: .5em;
+    font-size: 1.1em;
+	color: #e8e8e8;
+	float: left;
+	padding-left: 10px;
+	padding-top: 2px;
+	color: #181922;
+}
 
+/*--//progress-bars--*/
+/*-- 
+</style>
 </head>
 
 <body>
 	<div class="main">
 		<header class="codrops-header">
-			<h1 class="header-title"><span class="header-title__main">The Main Heading</span> <span class="header-title__part">Some line</span> <span class="header-title__sub">Some quote Some quote Some quote</span></h1>
+			<h1 class="header-title"><span class="header-title__main">Undergraduate Portfolio</span> <span class="header-title__part">Devanshi Shah</span> <span class="header-title__sub">Some quote Some quote Some quote</span></h1>
 		</header>
 
-		<div class="intro">
-			<blockquote><em>“Some Quote will come here or anything else. This can be removed as well”</em><span>Bhawesh</span></blockquote>
+		<div class="skills">
+			<h2>Skills</h2>
+			<div class="bar_group" style="width: 50%; font-size: 16px;">
+				<div class='bar_group__bar thin' label='Autocad' show_values='true' tooltip='true' value='75'></div>
+				<div class='bar_group__bar thin' label='Sketch Up' show_values='true' tooltip='true' value='85'></div>
+				<div class='bar_group__bar thin' label='Photoshop' show_values='true' tooltip='true' value='70'></div>
+				<div class='bar_group__bar thin' label='Revit' show_values='true' tooltip='true' value='60'></div>
+				<div class='bar_group__bar thin' label='Microsoft Office' show_values='true' tooltip='true' value='80'></div>
+			</div>
+			<script src="js/bars.js"></script>
 		</div>
 
 		<div class="container"></div>
@@ -211,9 +319,10 @@
 			</section>
 			<section class="js-section" data-stay="true" data-zoom-start="0.8"></section>
 		</div>
+
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
-	  <span class="close">&times;</span>
+	  <span class="close closedButton">&times;</span>
 	  <img class="modal-content" id="img01">
 	  <div id="caption"></div>
 
@@ -250,7 +359,10 @@
 		</div>
 		</div>
 	</section>
-	<div class="partials" w3-include-html="partials/competitionModals.html"></div>
+
+		<div class="intro">
+			<blockquote><em>“Architects shape the earth, I would like to shape it better”</em><span>Devanshi Shah</span></blockquote>
+		</div>
 
 	<script>
 	w3.includeHTML();
@@ -271,10 +383,10 @@
 		captionText.innerHTML = "asdas";
 		modal.style.zIndex = "10000";
 		
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		// Get the <span> element that close closedButtons the modal
+		var span = document.getElementsByClassName("closedButton")[0];
 
-		// When the user clicks on <span> (x), close the modal
+		// When the user clicks on <span> (x), close closedButton the modal
 		span.onclick = function() { 
 		    modal.style.display = "none";
 		}
