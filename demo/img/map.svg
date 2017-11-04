@@ -804,8 +804,8 @@
 		781.392,39.479 780.741,42.33 783.044,46.419 787.617,54.539 787.93,60.662 796.6,78.552 797.003,90.838 797.691,101.046 	"/>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 593.0767 771.5918)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">Devanshi</text>
-	<text transform="matrix(1 0 0 1 506.8916 793.6055)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">Some place</text>
+	<text transform="matrix(1 0 0 1 593.0767 771.5918)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">PIADS</text>
+	<text transform="matrix(1 0 0 1 506.8916 793.6055)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">MIT</text>
 	<circle fill="#A8AAAD" cx="588.39" cy="773.176" r="2.979"/>
 	<circle fill="#A8AAAD" cx="547.324" cy="789.997" r="2.978"/>
 </g>
@@ -829,11 +829,11 @@
 		c69.927-37.102,178.023-209.938,254.278-188.688c95.808,26.697,132.312,375.168,132.312,375.168"/>
 </g>
 <g id="points" display="none">
-	<circle id="Destination 0" display="inline" fill="#405b54" cx="629.957" cy="663.596" r="5.782"/>
-	<circle id="Destination 1" display="inline" fill="#405b54" cx="415.661" cy="839.364" r="5.781"/>
-	<circle id="Destination 2" display="inline" fill="#405b54" cx="578.029" cy="815.96" r="5.781"/>
-	<circle id="Destination 3" display="inline" fill="#405b54" cx="781.354" cy="741.851" r="5.782"/>
-	<circle id="Destination 4" display="inline" fill="#405b54" cx="1035.633" cy="553.162" r="5.782"/>
-	<circle id="Destination 5" display="inline" fill="#405b54" cx="1169.476" cy="930.54" r="5.782"/>
+	<circle id="Dream House" display="inline" fill="#405b54" cx="629.957" cy="663.596" r="5.782"/>
+	<circle id="Weekend Home" display="inline" fill="#405b54" cx="415.661" cy="839.364" r="5.781"/>
+	<circle id="Zaha Hadid" display="inline" fill="#405b54" cx="578.029" cy="815.96" r="5.781"/>
+	<circle id="Pilgrimage Center" display="inline" fill="#405b54" cx="781.354" cy="741.851" r="5.782"/>
+	<circle id="Urban Design" display="inline" fill="#405b54" cx="1035.633" cy="553.162" r="5.782"/>
+	<circle id="Internship" display="inline" fill="#405b54" cx="1169.476" cy="930.54" r="5.782"/>
 </g>
 </svg>
