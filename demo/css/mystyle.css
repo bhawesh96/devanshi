@@ -20,10 +20,6 @@
     max-width: 800px;
 }
 
-.modal-content:hover {
-    cursor: zoom-in;
-}
-
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -84,7 +80,7 @@
 }
 
 section.competition {
-    background-color: #181922;
+    background-color: #03012C;
     border-top: 1px solid white;
     text-align: center;
 }
@@ -97,7 +93,7 @@ section.competition h1{
 
 section.competition div{
     margin: 0px;
-    background-color: #181922;
+    background-color: #03012C;
 }
 
 div.indivCompetition {
@@ -131,14 +127,14 @@ button.close {
     font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
     text-align: center;
     color: #fff;
-    background: #181922;
+    background: #03012C;
     padding: 20px;
 }
 
 button.cv {
-   background-color: #E4E4E4;
-   padding: 10px 20px 10px 20px;
-   color: #181922;
+   background-color: #03012C;
+   padding: 10px 40px 10px 40px;
+   color: white;
    font-weight: 600;
 }
 button.cv:focus,
@@ -150,7 +146,7 @@ button.cv:hover {
 }
 
 .contact p{
-    background-color: #181922;
+    background-color: #03012C;
     color: white;
     padding-bottom: 40px;
     font-family: "PT Serif Caption";
@@ -159,4 +155,8 @@ button.cv:hover {
 
 img:hover {
     cursor: pointer;
+}
+
+body {
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
