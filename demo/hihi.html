@@ -7,7 +7,7 @@
 			position: relative;
 		}
 		img	{
-			width: 100%;
+			width: 97%;
 		}
 
 	</style>
@@ -21,10 +21,15 @@
 
 </head>
 <body>
+<center>
 	<span class='zoom' id='ex3'>
-		<?php $img=$_GET['image']; 
-		echo "<img src='$img'>";
-		?>
+		<script type="text/javascript">
+			var url = window.location.href.toString();
+			url = url.split("=");
+			var img = url[1];
+			document.writeln("<img src='"+img+"'");
+		</script>
 	</span>
+	</center>
 </body>
 </html>
