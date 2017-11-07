@@ -12,9 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
 	<script src="https://www.w3schools.com/lib/w3.js"></script>
 
 	<div class="partials" w3-include-html="partials/competitionModals.html"></div>
@@ -151,11 +152,49 @@
 				<p>Destination 0 content. Destination 0 content and again Destination 0 content</p>
 				<p>Destination 0 content</p>
 
-				<figure>
-					<img class="js-image" data-pos="0.25" src="img/journey/9.jpg" />
-					<figcaption>All things come to an end, and so did our journey when we reached the end of the main street in Reykjavik</figcaption>
-				</figure>
+					<div id="myCarousel0" class="carousel slide" data-ride="carousel" data-interval="3000">
+					    <div class="carousel-inner">
+					      <div class="item active">
+					        <img class="js-image" src="img/destination/dest0/1-thumb.jpg" alt="Los Angeles" style="width:100%;">
+					      </div>
 
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/2-thumb.jpg" alt="Chicago" style="width:100%;">
+					      </div>
+					    
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/3-thumb.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/4.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/5.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/6.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/7.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/8.jpg" alt="New york" style="width:100%;">
+					      </div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel0" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel0" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					  </div>
 				<p>Destination 0 contentDestination 0 contentDestination 0 contentDestination 0 content</p><p>Destination 0 content</p>
 			</section>
 
@@ -329,12 +368,12 @@
 	  	<img class="modal-content" id="img01">
 	  <div id="caption"></div>
 
-	  <a class="left carousel-control" onclick="changeLeft()" >
+	  <!-- <a class="left carousel-control" onclick="changeLeft()" >
 	    <span class="glyphicon glyphicon-chevron-left"></span>
 	  </a>
 	  <a class="right carousel-control" onclick="changeRight()" >
 	    <span class="glyphicon glyphicon-chevron-right"></span>
-	  </a>
+	  </a> -->
 
 	</div>
 	</div>
@@ -387,18 +426,23 @@
 	$(".js-image").click(function() {
 		showModal(this.src)
 	});
-	function showModal(imgId) {
+	function showModal(imgSrc) {
+		var flag=0;
 		var modal = document.getElementById('myModal');
-
+		$('.modal-content').removeClass("heighted");
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		debugger
 		//var img = document.getElementById(imgId.id);
 		var modalImg = document.getElementById("img01");
 		var captionText = document.getElementById("caption");
 		modal.style.display = "block";
-		modalImg.src = imgId;
+		if(imgSrc != (modalImg.src = imgSrc.replace("-thumb",""))){
+			flag=1;
+			console.log("flag set");
+		}
 		captionText.innerHTML = "asdas";
 		modal.style.zIndex = "10000";
+		if(flag==1)
+			$('.modal-content').addClass("heighted");
 		
 		// Get the <span> element that close closedButtons the modal
 		var span = document.getElementsByClassName("closedButton")[0];

@@ -7,7 +7,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: none; /* Enable scroll if needed */
+    overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
@@ -16,8 +16,8 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 800px;
 }
 
 /* Caption of Modal Image */
@@ -29,7 +29,7 @@
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    height: 150px;
+    height: 20px;
 }
 
 /* Add Animation */
@@ -56,7 +56,7 @@
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     transition: 0.3s;
     z-index: 1000;
@@ -145,4 +145,8 @@ button.cv:hover {
     background-color: #181922;
     color: white;
     padding-bottom: 40px;
+}
+
+.heighted {
+    max-width: 500px;
 }
