@@ -429,7 +429,7 @@
 	function showModal(imgSrc) {
 		var flag=0;
 		var modal = document.getElementById('myModal');
-		$('.modal-content').removeClass("heighted");
+		$('.modal-content').css("maxWidth", "900px");
 		// Get the image and insert it inside the modal - use its "alt" text as a caption
 		//var img = document.getElementById(imgId.id);
 		var modalImg = document.getElementById("img01");
@@ -442,7 +442,7 @@
 		captionText.innerHTML = "asdas";
 		modal.style.zIndex = "10000";
 		if(flag==1)
-			$('.modal-content').addClass("heighted");
+			$('.modal-content').css("maxWidth", "500px");
 		
 		// Get the <span> element that close closedButtons the modal
 		var span = document.getElementsByClassName("closedButton")[0];
