@@ -803,12 +803,12 @@
 		776.087,-22.985 774.352,-16.603 776.905,-1.831 774.467,11.194 773.19,18.041 774.325,26.917 778.167,30.203 778.528,35.695
 		781.392,39.479 780.741,42.33 783.044,46.419 787.617,54.539 787.93,60.662 796.6,78.552 797.003,90.838 797.691,101.046 	"/>
 </g>
-<g>
+<!-- <g>
 	<text transform="matrix(1 0 0 1 593.0767 771.5918)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">PIADS</text>
 	<text transform="matrix(1 0 0 1 506.8916 793.6055)" fill="#939598" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight='bold' font-size="5.1197">MIT</text>
 	<circle fill="#A8AAAD" cx="588.39" cy="773.176" r="2.979"/>
 	<circle fill="#A8AAAD" cx="547.324" cy="789.997" r="2.978"/>
-</g>
+</g> -->
 <g id="trail-path" display="none">
 	<path display="inline" fill="none" stroke="#010101" stroke-width="5" stroke-miterlimit="10" d="M629.401,665.289
 		c-12.551,0.99-12.553,15.608-20.967,24.866c-3.251,0.812-6.501,1.624-9.752,2.438c0,1.951,0,3.9,0,5.851
@@ -831,7 +831,7 @@
 <g id="points" display="none">
 	<circle id="Dream House" display="inline" fill="#405b54" cx="629.957" cy="663.596" r="5.782"/>
 	<circle id="Weekend Home" display="inline" fill="#405b54" cx="415.661" cy="839.364" r="5.781"/>
-	<circle id="Zaha Hadid" display="inline" fill="#405b54" cx="578.029" cy="815.96" r="5.781"/>
+	<circle id="Stance Museum" display="inline" fill="#405b54" cx="578.029" cy="815.96" r="5.781"/>
 	<circle id="Pilgrimage Center" display="inline" fill="#405b54" cx="781.354" cy="741.851" r="5.782"/>
 	<circle id="Urban Design" display="inline" fill="#405b54" cx="1035.633" cy="553.162" r="5.782"/>
 	<circle id="Internship" display="inline" fill="#405b54" cx="1169.476" cy="930.54" r="5.782"/>
