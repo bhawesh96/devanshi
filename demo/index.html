@@ -410,8 +410,37 @@
 				<div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="3000">
 				    <div class="carousel-inner">
 				      <div class="item active">
-				        <img class="js-image" src="img/destination/dest1/1.jpeg" alt="New york" style="width:100%;">
+				        <img class="js-image" src="img/destination/dest4/1.jpg" alt="New york" style="width:100%;">
 				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/2.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/3.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/4.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/5.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/6.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/7.jpg" alt="New york" style="width:100%;">
+				      </div>
+
+				      <div class="item">
+				        <img class="js-image" src="img/destination/dest4/8.jpg" alt="New york" style="width:100%;">
+				      </div>
+
 				    </div>
 
 				    <!-- Left and right controls -->
@@ -473,7 +502,7 @@
 		<div class="competition">
 		<h1>COMPETITIONS</h1>
 		<div class="col-md-3 indivCompetition">
-			<img src="img/competition/thumb1.jpg" data-toggle="modal" data-target="#myModal1">
+			<img src="img/competition/iia/1.jpg" data-toggle="modal" data-target="#myModal1">
 			<p>IIA</p>
 		</div>
 		<div class="col-md-3 indivCompetition">
@@ -525,7 +554,7 @@
 		var modalImg = document.getElementById("img01");
 		var captionText = document.getElementById("caption");
 		modal.style.display = "block";
-		if(imgSrc != (modalImg.src = imgSrc.replace("-thumb",""))){
+		if((imgSrc != (modalImg.src = imgSrc.replace("-thumb",""))) || (imgSrc.indexOf("dest4")!= -1)){
 			flag=1;
 			console.log("flag set");
 		}
