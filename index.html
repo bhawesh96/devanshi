@@ -1,13 +1,480 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-	<title></title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Devanshi</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Serif+Caption" />
+
+	<div class="partials" w3-include-html="partials/competitionModals.html"></div>
+<style type="text/css">
+	
+/*--progress-bars--*/
+.bar_group {
+    position: relative;
+	z-index: 0;
+	left: 18%;
+}
+.bar_group__bar.thin::before{
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 30px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #E4E4E4;
+}
+.bar_group__bar.thin {
+	width: 0%;
+	height: 30px;
+	padding-left: 100px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	background: #cecec5;
+	margin-bottom: 10px;
+	-webkit-transition: width 1s;
+	transition: width 1s;
+	-moz-transition: width 1s;
+	margin-bottom: 2em !important;
+}
+.bar_label_max {
+	position: absolute;
+	right: 0;
+	font-size: .8em;
+	margin-top: 1em;
+	color: #bdbdbd;
+	display: none;
+}
+.bar_label_min {
+
+    position: absolute;
+    left: 0;
+    font-size: .8em;
+    margin-top: 1em;
+	color: #bdbdbd;
+	display: none;
+}
+.b_tooltip {
+	-webkit-transition: all 5s;
+	transition: all 5s;
+	-moz-transition: all 5s;
+	position: relative;
+	float: left;
+	left: 100%;
+	padding: 4px 10px 7px 10px;
+	background-color: #000;
+	-webkit-transform: translateX(-50%) translateY(-30px);
+	-ms-transform: translateX(-50%) translateY(-30px);
+	transform: translateX(-50%) translateY(-30px);
+	-moz-transform: translateX(-50%) translateY(-30px);
+	-o-transform: translateX(-50%) translateY(-30px);
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	line-height: 11px;
+}
+.b_tooltip span {
+  color: #fff;
+  font-size: 0.8em;
+}
+.b_tooltip--tri {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+}
+.b_label {
+	font-weight: 600;
+    margin-bottom: .5em;
+    font-size: 1.1em;
+	color: #e8e8e8;
+	float: left;
+	padding-left: 10px;
+	padding-top: 2px;
+	color: #181922;
+}
+
+/*.modal img:active {
+	 -webkit-transform: scale(2);
+}*/
+</style>
 </head>
+
 <body>
+	<div class="main">
+		<header class="codrops-header">
+			<h1 class="header-title"><span class="header-title__main">Undergraduate Portfolio</span> <span class="header-title__part">Devanshi Shah</span> <span class="header-title__sub">Some quote Some quote Some quote</span></h1>
+		</header>
 
-<script type="text/javascript">
-	window.location.href="http://devanshi.tk/demo";
-</script>
+		<div class="skills">
+			<h2>SKILLS</h2>
+			<div class="bar_group" style="width: 50%; font-size: 16px;">
+				<div class='bar_group__bar thin' label='Autocad' show_values='true' tooltip='true' value='75'></div>
+				<div class='bar_group__bar thin' label='Sketch Up' show_values='true' tooltip='true' value='85'></div>
+				<div class='bar_group__bar thin' label='Photoshop' show_values='true' tooltip='true' value='70'></div>
+				<div class='bar_group__bar thin' label='Revit' show_values='true' tooltip='true' value='60'></div>
+				<div class='bar_group__bar thin' label='Microsoft Office' show_values='true' tooltip='true' value='80'></div>
+			</div>
+			<button class="btn btn-primary cv" onclick="showModal('img/cv.jpg')" alt="myCV">See CV</button>
+			<script src="js/bars.js"></script>
+		</div>
 
+		<div class="container"></div>
+		<div class="text">
+
+		<!-- Destination 0 -->
+			<section class="js-section" data-zoom-middle="2">
+				<h2><span class="title-up">Destination 0</span><span class="title-down">Dream Home</span></h2>
+				<div id="myCarousel0" class="carousel slide" data-ride="carousel" data-interval="3000">
+					    <div class="carousel-inner">
+					      <div class="item active">
+					        <img class="js-image" src="img/destination/dest0/1-thumb.jpg" alt="Los Angeles" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/2-thumb.jpg" alt="Chicago" style="width:100%;">
+					      </div>
+					    
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/3-thumb.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/4.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/5.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/6.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/7.jpg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest0/8.jpg" alt="New york" style="width:100%;">
+					      </div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel0" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel0" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					  </div>
+				<p><strong>ARCHITECT:</strong> The one who designs homes. With this definition and interest to shape the world a better
+				place to live in, we finally entered into Architecture college.</p>
+				<p><strong>PROGRAMME:</strong> Since the day we understand the term house, we all dream of one, and our first
+				project was to design a DREAM HOME.</p>
+				<p><strong>CONCEPT:</strong> With innovation and dream being the key words I wished for a home 100 m away high
+				from the ground. To be a part of a city, yet stay away from the chaos beneath, I designed a luxurious
+				4 floor building accessible through a glass capsule lift. With no restrictions to area, heights, materials
+				or colours , we dreamt and designed our best.</p>
+				<p><strong>DESIGN:</strong> All the wishes came true when each floor was designated one particular activity. A glass
+				dome on the topmost floor with solar panels designed as the master bedroom to stay connected to
+				the stars at night and feel the first sunrays. A floor for each, swimming pool and a party room being
+				the entertainment spaces and the lowermost floor being the living and dining area.</p>
+			</section>
+
+		<!-- Destination 1 -->
+			<section class="js-section" data-zoom-start="2">
+				<h2><span class="title-up">Destination 1</span><span class="title-down">Weekend Home</span></h2>
+				<div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="3000">
+					    <div class="carousel-inner">
+					      <div class="item active">
+					        <img class="js-image" src="img/destination/dest1/1.jpeg" alt="Los Angeles" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/2.jpeg" alt="Chicago" style="width:100%;">
+					      </div>
+					    
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/3.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/4.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/5.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/6.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/7.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/8.jpeg" alt="New york" style="width:100%;">
+					      </div>
+
+					      <div class="item">
+					        <img class="js-image" src="img/destination/dest1/9-thumb.jpeg" alt="New york" style="width:100%;">
+					      </div>
+					    </div>
+
+					    <!-- Left and right controls -->
+					    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+					      <span class="glyphicon glyphicon-chevron-left"></span>
+					    </a>
+					    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+					      <span class="glyphicon glyphicon-chevron-right"></span>
+					    </a>
+					  </div>
+				<p><strong>PROGRAMME:</strong> After designing a dream home for ourselves, we were introduced to the user groups and a physically existing site. A weekend home for our family.</p>
+				<p><strong>CONCEPT:</strong> o understand the context and its characteristics , the family members and their wishes I finally ended up designing a weekend home in a contemporary vernacular style of architecture.
+				Native place, Bhujpur , Kutcch, the space where we created precious childhood memories and learnt all those lessons from a village was the ideal site for my family’s weekend gataway. By knowing all those traditional names from osari to aangan and adding a tinge of the modern generations’ wishes, designed a G+1 building of mud.</p>
+				<p><strong>DESIGN:</strong> TDesigning on the same lines of architecture of Kutch and also being sensitive towards the natural disasters prone in that region ,the mud building was strongly rooted to the ground. The
+				building has 3 bedrooms, a library , common space and kitchen. A deck with pargolas and a bar. Various interesting techniques for insulation were applied. Designed windows and door patterns using the traditional cloth and batik work of Kutchh</p>	
+			</section>
+
+			<!-- Destination 2  -->
+			<section class="js-section" data-zoom-start="2.5" data-stay="true">
+				<h2><span class="title-up">Destionation 2</span><span class="title-down">Stance Museum</span></h2>
+				<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="3000">
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img class="js-image" src="img/destination/dest1/1.jpeg" alt="New york" style="width:100%;">
+				      </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				</div>
+
+			</section>
+
+			<!-- Destination 2 -->
+			<section class="js-section" data-zoom-start="1.5">
+				<p><strong>PROGRAMME:</strong> To design a museum or an art gallery based on an Architect’s philosophy.</p>
+				<p><strong>CONCEPT:</strong> Zaha Hadid known for her radical deconstructivist designs , based on her philosophy and principles , Museum of Dance came up. With an idea of preserving various dance forms in the world and exhibiting them in interesting ways the museum stood in the outskirts of the city Nagpur. To
+				match the design of Zaha Hadid in Nagpur’s context was a tedious task.</p>
+				<p><strong>DESIGN:</strong> The building design establishes a continuous relationship with its surroundings and its interiors. The site consists of a parking and a few water bodies as seen in Zaha’s works. The
+				museum’s form is a stance of a human being with entrance being the Head of the human body and
+				exhibition space being the stance. A two storeyed building with ground floor being cafeteria and
+				exhibition spaces. 1 st floor constitutes of all the management offices and 2 nd floor constitutes of
+				library, souvenir shop and an auditorium. All the floors connected with an escalator.</p>
+				
+			</section>
+
+			<!-- Destination 3 -->
+			<section class="js-section" data-zoom-start="1.5">
+				<h2><span class="title-up">Destination 3</span><span class="title-down">Pilgrimage Center</span></h2>
+				<div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="3000">
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img class="js-image" src="img/destination/dest1/1.jpeg" alt="New york" style="width:100%;">
+				      </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				</div>
+
+				<p><strong>PROGRAMME:</strong> To design a pilgrimage centre for any two religions and amalgamating architectural elements of both on a 2.5 acres of land accommodating 250 people. Markhanda, Chandrapur being
+				the site with river Wainganga flowing besides adding to the beauty of the site.</p>
+				<p><strong>CONCEPT:</strong> Based on architectural styles influenced by Hinduism and Buddhism the elements of
+				design have been incorporated amalgamating these two entities. Hence, the name Satya chakra pilgrimage centre.</p>
+				<p><strong>DESIGN:</strong> The Hindu shikharas and Buddhist domes of the blocks can be seen from a long distance. As you approach the site the ashok chakras welcome you at the entrance gate with administration
+				block and waiting room on the left. The dining area has been designed in the heart of the site, approachable to both- the visitors as well as occupants. The accommodation blocks are inspired from the stupas in Buddhism. At the end between the two blocks , a huge meditation dome has been designed facing the river flowing behind.</p>
+			</section>
+
+			<!-- Destination 4 -->
+			<section class="js-section" data-zoom-start="1.5" data-zoom-middle="1" data-icon="img/plane.svg">
+				<h2><span class="title-up">Destination 4</span><span class="title-down">Urban Design</span></h2>
+				<p>In a group 4, we learnt the art of teamwork and were asked to map and analyse a 1km sq site.</p>
+
+				<div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="3000">
+				    <div class="carousel-inner">
+				      <div class="item active">
+				        <img class="js-image" src="img/destination/dest1/1.jpeg" alt="New york" style="width:100%;">
+				      </div>
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+				      <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+				      <span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				</div>
+				
+				<p><strong>PROGRAMME:</strong> To understand nuances of designing for urban growth , incentive mechanisms to
+				ensure favourable growth and learning to write guidelines and how they lead to desirable urban form outcomes. Last stage of the progamme includes the final master plan after implementing TOD policies on the upcoming Nagpur Metro Rail.</p>
+				<p><strong>CONCEPT:</strong> Jaiprakash nagar metro substation lies 3-4 km away from the airport. undoubtedly, the airport, with its influx of passengers, is responsible for hotel typology spill-over. Our station is in close proximity to Mihan, which reinforces buisness sectors, and generates socially diverse buisness opportunities.<br>
+				To cater to this crowd of buisness, office and hotel users - keeping in mind the urban fabric of the
+				site, which is predominantly residential, <strong>“transforming it into a mixed use service sector for the
+				transient crowd applying tod policies”</strong> - is being proposed.</p>
+				<p><strong>DESIGN:</strong> Keeping in mind the vision statement and the impact of TOD , our design proposal
+				consumes maximum FSI with the hindsight of exponential growth in the coming decades.</p>	
+			</section>
+
+			<!-- Destination 5 -->
+			<section class="js-section" data-zoom-start="1.2">
+				<h2><span class="title-up">Destination 5</span><span class="title-down">Internship</span></h2>
+				<p>Time to enter the professional life.</p>
+				<!-- <figure>
+					<img class="js-image" src="img/cv.jpg" />
+				</figure> -->
+				<p>After crossing all these destinations I finally enter the final stage with an objective to apply my skills
+				acquired as a student and broaden my horizon as a future architect.</p>
+				<p>With soul aim to experience the professional life and gain practical knowledge I would like to join
+				your esteemed firm for an internship course starting from January.</p>
+				<button class="btn btn-primary cv" onclick="showModal('img/cv.jpg')" alt="myCV">See CV</button>
+			</section>
+
+			<section class="js-section" data-stay="true" data-zoom-start="0.8"></section>
+		</div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <span class="close closedButton">&times;</span>
+	  <span class="glyphicon glyphicon-home closedButton"></span>
+	  	<img class="modal-content" id="img01">
+	  <div id="caption"></div>
+
+	  <!-- <a class="left carousel-control" onclick="changeLeft()" >
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" onclick="changeRight()" >
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a> -->
+
+	</div>
+	</div>
+	<!-- /main -->
+
+
+	<section class="competition">
+		<div class="competition">
+		<h1>COMPETITIONS</h1>
+		<div class="col-md-3 indivCompetition">
+			<img src="img/competition/thumb1.jpg" data-toggle="modal" data-target="#myModal1">
+			<p>IIA</p>
+		</div>
+		<div class="col-md-3 indivCompetition">
+			<img src="img/competition/joint/7.jpg" data-toggle="modal" data-target="#myModal3">
+			<p>Joint Studio, Mumbai</p>
+		</div>
+		<div class="col-md-3 indivCompetition">
+			<img src="img/competition/tinyhouse/1.jpg" data-toggle="modal" data-target="#myModal2">
+			<p>Tiny House</p>
+		</div>
+		<div class="col-md-3 indivCompetition">
+			<img src="img/competition/nasa/1.jpg" width="100%" data-toggle="modal" data-target="#myModal4">
+			<p>NASA</p>
+		</div>
+		</div>
+	</section>
+
+		<div class="intro">
+			<blockquote><em>“Architects shape the earth, I would like to shape it better”</em><span>Devanshi Shah</span></blockquote>
+		</div>
+
+		<section class="competition">
+			<div class="contact">
+			<h1>CONTACT</h1>
+			<div class="col-md-4 indivCompetition">
+				<span class="glyphicon glyphicon-home"></span><p>Swapnil Salaj Apartment, <br> Gandhinagar, <br> Nagpur, Maharashtra</p>
+			</div>
+			<div class="col-md-4 indivCompetition">
+				<span class="glyphicon glyphicon-phone-alt"></span><p>Devanshi Shah <br> +91 94040 89109<br> +91 78878 59866</p>
+			</div>
+			<div class="col-md-4 indivCompetition">
+				<span class="glyphicon glyphicon-send"></span><p>contact@devanshishahfolio.me <br> devanshi2609@gmail.com<br> facebook.com/devanshi2609</p>
+			</div>
+			</div>
+		</section>
+	<script>
+	w3.includeHTML();
+	// Get the modal
+	$(".js-image").click(function() {
+		showModal(this.src)
+	});
+	function showModal(imgSrc) {
+		var flag=0;
+		var modal = document.getElementById('myModal');
+		$('.modal-content').css("maxWidth", "900px");
+		$('.modal-content').css("minHeight", "100%");
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		//var img = document.getElementById(imgId.id);
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		modal.style.display = "block";
+		if(imgSrc != (modalImg.src = imgSrc.replace("-thumb",""))){
+			flag=1;
+			console.log("flag set");
+		}
+		captionText.innerHTML = "asdas";
+		modal.style.zIndex = "10000";
+		if(flag==1){
+			$('.modal-content').css("maxWidth", "500px");
+			$('.modal-content').css("minHeight", "800px");
+		}
+		
+		// Get the <span> element that close closedButtons the modal
+		var span = document.getElementsByClassName("closedButton")[0];
+
+		// When the user clicks on <span> (x), close closedButton the modal
+		span.onclick = function() { 
+		    modal.style.display = "none";
+		}
+	}
+
+	$('.modal-content').click(function() {
+		var src = this.src.split("demo/");
+		window.location.href="hihi.html?image=" + (src[1]);
+	});
+
+	</script>
+	<script src="../dist/app.js"></script>
 </body>
+
 </html>
