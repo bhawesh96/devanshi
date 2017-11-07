@@ -20,6 +20,10 @@
     max-width: 800px;
 }
 
+.modal-content:hover {
+    cursor: zoom-in;
+}
+
 /* Caption of Modal Image */
 #caption {
     margin: auto;
@@ -100,6 +104,10 @@ div.indivCompetition {
     /*border-right: 1px solid white;*/
 }
 
+div.indivCompetition .glyphicon{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
 div.indivCompetition img{
     height: 200px;
     margin-bottom: 10px;
@@ -145,4 +153,10 @@ button.cv:hover {
     background-color: #181922;
     color: white;
     padding-bottom: 40px;
+    font-family: "PT Serif Caption";
+    letter-spacing: 0.8px;
+}
+
+img:hover {
+    cursor: pointer;
 }
