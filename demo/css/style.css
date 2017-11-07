@@ -145,12 +145,14 @@ a:focus {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	height: 150vh;
-	margin: 0 0 3em;
+	height: 40vh;
+	/*margin: 0 0 3em;*/
 	padding: 3em;
 	text-align: center;
-	color: #fff;
-	background: #181922;
+	/*color: #fff;*/
+	color: #181922;
+	background-color: white;
+	/*background: #181922;*/
 }
 
 .intro blockquote {

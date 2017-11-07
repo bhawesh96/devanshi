@@ -140,3 +140,9 @@ button.cv:hover {
    color: #181922;
    font-weight: 600;
 }
+
+.contact p{
+    background-color: #181922;
+    color: white;
+    padding-bottom: 40px;
+}
